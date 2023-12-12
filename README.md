@@ -67,3 +67,4 @@ A Result Management System using HTML, CSS, JavaScript , Node and using MVC Mode
 
 ## Student Result
 ![image](https://github.com/jaikhandelwal053/Result-Managment-App/assets/86093512/6eee35ec-4a79-4f71-ac51-8b2f9c03e862)
+
