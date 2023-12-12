@@ -21,6 +21,9 @@ A Result Management System using HTML, CSS, JavaScript , Node and using MVC Mode
 ## Frontend
 1. Open URL "https://localhost:3000" on a browser.
 
+## Github 
+1. https://github.com/jaikhandelwal053/Result-Managment-App
+
 ## Teacher Login credential
 1. Password : "Teacher".
 
