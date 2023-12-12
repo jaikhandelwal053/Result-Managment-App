@@ -1,0 +1,15 @@
+<% if(locals.success){ %>
+    <div class="text-center  success-content" role="alert">
+        <%= success %>
+    </div>
+<% } %>
+<p class="text">Login as</p>
+<div class="centerLog">
+    
+    <div>
+        <a type="button" href="/teacher/login" class="btn mbtn btn-lg btn-block px-5">Teacher</a>
+    </div>
+    <div>
+        <a type="button" href="/student/login" class="btn mbtn btn-lg btn-block px-5">Student</a>
+    </div>
+</div>

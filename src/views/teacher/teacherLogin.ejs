@@ -1,0 +1,36 @@
+<div>
+  <a href="/" class="btn" style="margin-top: 5px; background: none; border: none; padding: 0;">
+    <img src="/img/arrow-back-blue.png" alt="Back" style="width: 60px; height: 60px;">
+  </a>
+</div>
+<% if (typeof error !== 'undefined' && error) { %>
+  <div class="text-center not-found-content" role="alert">
+    <%= error %>
+  </div>
+<% } %>
+<div class="d-flex justify-content-center  centerLog">
+  <!-- <div class="centerLog"> -->
+    <form method="POST" class="customeForm">
+      <h2>Teacher Login</h2>
+      <br>
+      <div class="mb-3 input-box">
+        <label for="exampleInput" class="form-label">Password : </label>
+        <input type="password" name="password" class="form-control" id="pass">
+        <br>
+        <input type="checkbox" style="width: 30px;" onclick="myFunction()">Show Password
+        <br>
+      </div>
+      <a><button type="submit" class="btn fbtn">Submit</button></a>
+    </form>
+  <!-- </div> -->
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("pass");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>

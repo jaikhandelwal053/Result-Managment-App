@@ -1,0 +1,24 @@
+<a href="/" class="btn" style="margin-top: 5px; background: none; border: none; padding: 0;">
+  <img src="/img/arrow-back-blue.png" alt="Back" style="width: 60px; height: 60px;">
+</a>
+
+<% if (typeof error !=='undefined' && error) { %>
+  <div class="text-center not-found-content" role="alert">
+    <%= error %>
+  </div>
+  <% } %>
+    <div class="justify-content-center centerLog">
+      <form method="POST" class="customeForm">
+        <h2>Student Login</h2>
+        <br>
+        <div class="mb-3 input-box">
+          <label for="exampleInput" class="form-label">Roll no : </label>
+          <input type="number" name="roll" class="form-control" id="exampleInput" required>
+        </div>
+        <div class="mb-3 input-box">
+          <label for="exampleInput" class="form-label">Date of Birth : </label>
+          <input type="date" name="dob" class="form-control" id="exampleInput" required>
+        </div>
+        <a><button type="submit" class="btn fbtn">Submit</button></a>
+      </form>
+    </div>

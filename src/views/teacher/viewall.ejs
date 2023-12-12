@@ -1,0 +1,36 @@
+<a href="/teacher/dashboard" class="btn" style="margin-top: 5px; background: none; border: none; padding: 0;">
+  <img src="/img/arrow-back-blue.png" alt="Back" style="width: 60px; height: 60px;">
+</a>
+<% if(locals.success){ %>
+  <div class="text-center success-content" role="alert">
+    <%= success %>
+  </div>
+  <% } %>
+<h3 >All Students</h3>
+<div class="tableDiv">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Roll No.</th>
+        <th scope="col">Name</th>       
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Score</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <%  student.forEach(element => { %>
+            <tr class="head">
+                <td><%= element.roll %></td>
+                <td><%= element.name %></td>               
+                <td><%= element.dob.toISOString().substring(0,10) %></td>
+                <td><%= element.score %></td> 
+                <td>
+                  <a href="/teacher/edit/<%= element._id %> "><img style="margin: 0px 5px;" src="https://img.icons8.com/material-outlined/30/000000/edit.png"/></a>
+                  <a href="/teacher/delete/<%= element._id %> "><img style="margin: 0px 5px;" src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"/></a>
+                </td>
+              </tr>
+        <%}) %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,10 @@
+<nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Result Management System</a>     
+      <% if(locals.user){ %>
+        <div class="d-flex">
+          <a href="/teacher/logout" class="btn btn-outline-danger" type="submit" style="background-color: #e89f9f;">Logout</a>
+        </div>
+      <% } %>
+      </div>
+</nav>

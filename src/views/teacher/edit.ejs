@@ -1,0 +1,30 @@
+<a href="/teacher" class="btn" style="margin-top: 5px; background: none; border: none; padding: 0;">
+  <img src="/img/arrow-back-blue.png" alt="Back" style="width: 60px; height: 60px;">
+</a>
+<div class="container ">
+  <h3>Editing Form for Student :<%= user.name %> </h3>
+
+  <div class="row justify-content-md-center">
+    <div class="col-md-6">
+      <form method="POST" class="addStu" autocomplete="off">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name : </label>
+            <input type="text" name="name" class="form-control" value="<%= user.name  %> " id="name" required>
+          </div>
+          <div class="mb-3">
+              <label for="rollNumber" class="form-label">Roll No. : </label>
+              <input type="text" name="roll" value="<%= user.roll  %> " class="form-control" id="rollNumber" required>
+          </div>
+          <div class="mb-3">
+              <label for="dob" class="form-label">Date of Birth : </label>
+              <input type="text" name="dob" value="<%=user.dob.toISOString().substring(0,10)%> " class="form-control" id="dob" required>
+            </div>
+            <div class="mb-3">
+              <label for="score" class="form-label">Score : </label>
+              <input type="text" name="score" value="<%= user.score  %> " class="form-control" id="score" min="0" max="100" required>
+            </div>
+          <button type="submit" class="btn btn-success btn-lg btn-block my-3">Update</button>
+      </form>
+    </div>
+  </div>
+</div>

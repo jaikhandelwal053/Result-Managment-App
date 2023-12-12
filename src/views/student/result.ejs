@@ -1,0 +1,25 @@
+<a href="/" class="btn" style= "background: none; border: none; padding: 0;">
+  <img src="/img/arrow-back.png" alt="Back" style="width: 50px; height: 50px;">
+</a>
+<h3>My Result</h3>
+<div class="stuTable">
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Roll no.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Date of birth</th>
+          <th scope="col">Score</th>
+        </tr>
+      </thead>
+      <tbody>        
+        <tr>
+          <td><%= one.roll %> </td>
+          <td><%= one.name %> </td>
+          <td><%= one.dob.toISOString().substring(0,10) %> </td>
+          <td><%= one.score %> </td>
+        </tr>
+        
+      </tbody>
+    </table>    
+</div>
